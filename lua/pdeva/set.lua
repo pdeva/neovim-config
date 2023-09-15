@@ -26,4 +26,5 @@ vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.showcmd = true
+vim.opt.autowriteall = true
 
