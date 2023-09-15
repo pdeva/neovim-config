@@ -19,7 +19,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 20
 
 vim.g.mapleader = " "
 
