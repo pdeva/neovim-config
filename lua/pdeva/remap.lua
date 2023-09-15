@@ -10,5 +10,6 @@ vim.keymap.set("n", "<leader>gc", ":Git commit<CR>")
 vim.keymap.set("n", "<leader>gl", ":Git log<CR>")
 vim.keymap.set("n", "<leader>gd", ":Git diff<CR>")
 vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
-vim.keymap.set("n", "<leader>ga", ":Gwrite<CR>")
+vim.keymap.set("n", "<leader>gaa", ":Gwrite<CR>")
+vim.keymap.set("n", "<leader>gaf", ":Gwrite<CR>")
 
