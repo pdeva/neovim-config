@@ -24,3 +24,6 @@ vim.opt.scrolloff = 8
 vim.g.mapleader = " "
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.showcmd = true
+
