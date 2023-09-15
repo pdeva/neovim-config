@@ -50,4 +50,9 @@ use {
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
 
+use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
+}
+
 end)
