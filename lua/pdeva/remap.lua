@@ -13,3 +13,6 @@ vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
 vim.keymap.set("n", "<leader>gaa", ":Git add .<CR>")
 vim.keymap.set("n", "<leader>gaf", ":Gwrite<CR>")
 
+
+vim.keymap.set("n", "<leader>so", ":SymbolsOutline<CR>")
+
