@@ -12,10 +12,12 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use({ 
+
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+  use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
-	  config = function() 
+	  config = function()
 		  vim.cmd('colorscheme rose-pine')
 	  end
 
