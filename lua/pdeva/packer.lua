@@ -55,4 +55,5 @@ use {
     requires = "neovim/nvim-lspconfig"
 }
 
+use 'airblade/vim-gitgutter'
 end)
