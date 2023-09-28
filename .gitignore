@@ -1,2 +1,5 @@
 plugin/packer_compiled.lua
+.idea/
+.fleet/
+.vscode/
 
