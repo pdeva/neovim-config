@@ -3,16 +3,9 @@ return {
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    { 'rose-pine/neovim', name = 'rose-pine' },
 
-    --{
-    --    'rose-pine/neovim',
-    --    as = 'rose-pine',
-    --    config = function()
-    --        vim.cmd('colorscheme rose-pine')
-    --    end
-    --
-    --},
     --{ 'nvim-treesitter/nvim-treesitter', { build = ':TSUpdate' } },
     --"nvim-lua/plenary.nvim",
     --'theprimeagen/harpoon',
