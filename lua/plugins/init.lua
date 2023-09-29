@@ -5,12 +5,13 @@ return {
     },
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     { 'rose-pine/neovim', name = 'rose-pine' },
-
-    --{ 'nvim-treesitter/nvim-treesitter', { build = ':TSUpdate' } },
-    --"nvim-lua/plenary.nvim",
+    'nvim-lua/plenary.nvim',
+    'tpope/vim-fugitive',
+    'simrat39/symbols-outline.nvim',
+    { 'nvim-treesitter/nvim-treesitter',  build = ':TSUpdate'  },
     --'theprimeagen/harpoon',
     --'mbbill/undotree',
-    --'tpope/vim-fugitive',
+
     --
     --{
     --    'VonHeikemen/lsp-zero.nvim',
@@ -28,9 +29,6 @@ return {
     --        { 'L3MON4D3/LuaSnip' },
     --    }
     --},
-    --
-    --'simrat39/symbols-outline.nvim',
-    --
     --{
     --    'nvim-lualine/lualine.nvim',
     --    dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -41,5 +39,5 @@ return {
     --    dependencies = "neovim/nvim-lspconfig"
     --},
     --
-    --'airblade/vim-gitgutter',
+    'airblade/vim-gitgutter',
 }
