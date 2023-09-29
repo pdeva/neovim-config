@@ -1,61 +1,54 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+return require('lazy').setup({
 
--- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    {
+        'nvim-telescope/telescope.nvim', tag = '0.1.3',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    },
 
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.3',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+    {
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            vim.cmd('colorscheme rose-pine')
+        end
 
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
+    },
+    { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } },
+    "nvim-lua/plenary.nvim",
+    'theprimeagen/harpoon',
+    'mbbill/undotree',
+    'tpope/vim-fugitive',
 
-  })
-  use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
-  use("nvim-lua/plenary.nvim")
-  use('theprimeagen/harpoon')
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x',
+        requires = {
+            --- Uncomment these if you want to manage LSP servers from neovim
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
-  use {
-  'VonHeikemen/lsp-zero.nvim',
-  branch = 'v3.x',
-  requires = {
-    --- Uncomment these if you want to manage LSP servers from neovim
-     {'williamboman/mason.nvim'},
-     {'williamboman/mason-lspconfig.nvim'},
+            -- LSP Support
+            { 'neovim/nvim-lspconfig' },
+            -- Autocompletion
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'L3MON4D3/LuaSnip' },
+        }
+    },
 
-    -- LSP Support
-    {'neovim/nvim-lspconfig'},
-    -- Autocompletion
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-nvim-lsp'},
-    {'L3MON4D3/LuaSnip'},
-  }
-}
+    'simrat39/symbols-outline.nvim',
 
-use 'simrat39/symbols-outline.nvim'
+    {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    },
 
-use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-}
+    {
+        "SmiteshP/nvim-navic",
+        requires = "neovim/nvim-lspconfig"
+    },
 
-use {
-    "SmiteshP/nvim-navic",
-    requires = "neovim/nvim-lspconfig"
-}
-
-use 'airblade/vim-gitgutter'
-end)
+    'airblade/vim-gitgutter',
+})
