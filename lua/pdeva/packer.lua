@@ -6,7 +6,7 @@ return require('lazy').setup({
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
-    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {
         'rose-pine/neovim',
         as = 'rose-pine',
@@ -15,7 +15,7 @@ return require('lazy').setup({
         end
 
     },
-    { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } },
+    { 'nvim-treesitter/nvim-treesitter', { build = ':TSUpdate' } },
     "nvim-lua/plenary.nvim",
     'theprimeagen/harpoon',
     'mbbill/undotree',
