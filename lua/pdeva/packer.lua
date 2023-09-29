@@ -3,7 +3,7 @@ return require('lazy').setup({
 
     {
         'nvim-telescope/telescope.nvim', tag = '0.1.3',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
@@ -24,7 +24,7 @@ return require('lazy').setup({
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
-        requires = {
+        dependencies = {
             --- Uncomment these if you want to manage LSP servers from neovim
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
@@ -42,12 +42,12 @@ return require('lazy').setup({
 
     {
         'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
     },
 
     {
         "SmiteshP/nvim-navic",
-        requires = "neovim/nvim-lspconfig"
+        dependencies = "neovim/nvim-lspconfig"
     },
 
     'airblade/vim-gitgutter',
