@@ -1,4 +1,4 @@
-return require('lazy').setup({
+return {
 
 
     {
@@ -51,4 +51,4 @@ return require('lazy').setup({
     },
 
     'airblade/vim-gitgutter',
-})
+}

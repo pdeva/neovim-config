@@ -10,7 +10,7 @@ if not vim.loop.fs_stat(lazyPath) then
     })
 end
 vim.opt.rtp:prepend(lazyPath)
-
+require('lazy').setup('plugins')
 
 require("pdeva.set")
 require("pdeva.remap")
