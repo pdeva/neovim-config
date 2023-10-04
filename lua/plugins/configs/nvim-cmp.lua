@@ -15,11 +15,13 @@ return function()
             ["<Tab>"] = cmp.mapping(function(fallback)
                 if luasnip.expand_or_locally_jumpable() then
                     luasnip.expand_or_jump()
-                else
+                elseif cmp.visible() then
                     cmp.confirm {
                         behavior = cmp.ConfirmBehavior.Replace,
                         select = true,
                     }
+                else
+                    fallback()
                 end
             end, { "i", "s" }),
         },
