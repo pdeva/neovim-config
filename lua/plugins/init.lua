@@ -3,6 +3,7 @@ return {
     'tpope/vim-fugitive',
     'simrat39/symbols-outline.nvim',
     'airblade/vim-gitgutter',
+    { 'rose-pine/neovim', name = 'rose-pine' },
     {
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
         dependencies = {
@@ -14,6 +15,11 @@ return {
             },
         }
     },
-    { 'rose-pine/neovim', name = 'rose-pine' },
-    { 'nvim-treesitter/nvim-treesitter',  build = ':TSUpdate'  },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+        },
+        build = ":TSUpdate",
+    },
 }
