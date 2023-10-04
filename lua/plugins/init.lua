@@ -30,6 +30,7 @@ return {
             "hrsh7th/cmp-nvim-lsp",
             "rafamadriz/friendly-snippets",
         },
+        opts = require "plugins.configs.nvim-cmp",
     },
     {
         "neovim/nvim-lspconfig",
