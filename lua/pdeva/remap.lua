@@ -8,3 +8,5 @@ vim.keymap.set("n", "-", ":split<CR>")
 vim.keymap.set("n", "<leader><Right>", "<C-w>l")
 vim.keymap.set("n", "<leader><Left>", "<C-w>h")
 
+vim.keymap.set("n", "<leader>w", "<C-b>")
+vim.keymap.set("n", "<leader>s", "<C-f>")
