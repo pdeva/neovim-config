@@ -10,3 +10,5 @@ vim.keymap.set("n", "<leader><Left>", "<C-w>h")
 
 vim.keymap.set("n", "<leader>w", "<C-b>")
 vim.keymap.set("n", "<leader>s", "<C-f>")
+
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>")
