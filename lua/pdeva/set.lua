@@ -27,3 +27,4 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.showcmd = true
 vim.opt.autowriteall = true
 
+vim.g.loaded_matchparen = true
