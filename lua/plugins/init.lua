@@ -2,7 +2,6 @@ return {
     'nvim-lua/plenary.nvim',
     'tpope/vim-fugitive',
     'simrat39/symbols-outline.nvim',
-    'airblade/vim-gitgutter',
     { 'rose-pine/neovim', name = 'rose-pine' },
     {
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
